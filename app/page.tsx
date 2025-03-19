@@ -199,69 +199,96 @@ export default function Home() {
       </section>
 
       {/* Featured Pieces Section */}
-      <section className="py-24">
+      <section className="py-20 bg-background">
         <Container>
-          <h2 className="font-serif text-3xl md:text-4xl text-center mb-16 tracking-wide">Featured Pieces</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif mb-4">Featured Pieces</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Discover our most sought-after designs, each piece telling its own story through craftsmanship and innovation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+              <Image
+                src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=500&auto=format&fit=crop"
+                alt="Aurora Necklace"
+                fill
+                className="object-cover transition-all duration-500 group-hover:scale-110"
+                sizes="300px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-xl font-serif text-white mb-2">Aurora Necklace</h3>
+                <p className="text-white/90 text-sm mb-4">A delicate cascade of diamonds that captures the essence of dawn.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-white font-medium">$2,800</span>
+                  <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-white/90 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
 
-          <div className="flex overflow-x-auto gap-5 pb-5 snap-x snap-mandatory scrollbar-hide">
-            <div className="flex-none w-[300px] snap-start">
-              <div className="relative h-[400px]">
-                <Image
-                  src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=500&auto=format&fit=crop"
-                  alt="Aurora Necklace"
-                  fill
-                  className="object-cover"
-                  sizes="300px"
-                />
-              </div>
-              <div className="text-center py-4">
-                <h3 className="font-serif text-lg mb-1">Aurora Necklace</h3>
-                <p className="text-gray-600 text-sm">Recycled gold with ethically sourced sapphires</p>
-              </div>
-            </div>
-            <div className="flex-none w-[300px] snap-start">
-              <div className="relative h-[400px]">
-                <Image
-                  src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=500&auto=format&fit=crop"
-                  alt="Terra Earrings"
-                  fill
-                  className="object-cover"
-                  sizes="300px"
-                />
-              </div>
-              <div className="text-center py-4">
-                <h3 className="font-serif text-lg mb-1">Terra Earrings</h3>
-                <p className="text-gray-600 text-sm">Hammered silver with natural pearl accents</p>
+            <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+              <Image
+                src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=500&auto=format&fit=crop"
+                alt="Terra Earrings"
+                fill
+                className="object-cover transition-all duration-500 group-hover:scale-110"
+                sizes="300px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-xl font-serif text-white mb-2">Terra Earrings</h3>
+                <p className="text-white/90 text-sm mb-4">Earth-inspired hoops that bring natural elegance to any look.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-white font-medium">$1,200</span>
+                  <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-white/90 transition-colors">
+                    View Details
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="flex-none w-[300px] snap-start">
-              <div className="relative h-[400px]">
-                <Image
-                  src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=500&auto=format&fit=crop"
-                  alt="Solstice Ring"
-                  fill
-                  className="object-cover"
-                  sizes="300px"
-                />
-              </div>
-              <div className="text-center py-4">
-                <h3 className="font-serif text-lg mb-1">Solstice Ring</h3>
-                <p className="text-gray-600 text-sm">Rose gold with conflict-free diamonds</p>
+
+            <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+              <Image
+                src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=500&auto=format&fit=crop"
+                alt="Solstice Ring"
+                fill
+                className="object-cover transition-all duration-500 group-hover:scale-110"
+                sizes="300px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-xl font-serif text-white mb-2">Solstice Ring</h3>
+                <p className="text-white/90 text-sm mb-4">A bold statement piece that celebrates the changing seasons.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-white font-medium">$1,800</span>
+                  <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-white/90 transition-colors">
+                    View Details
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="flex-none w-[300px] snap-start">
-              <div className="relative h-[400px]">
-                <Image
-                  src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=500&auto=format&fit=crop"
-                  alt="Oceana Bracelet"
-                  fill
-                  className="object-cover"
-                  sizes="300px"
-                />
-              </div>
-              <div className="text-center py-4">
-                <h3 className="font-serif text-lg mb-1">Oceana Bracelet</h3>
-                <p className="text-gray-600 text-sm">Sterling silver with ocean-inspired details</p>
+
+            <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+              <Image
+                src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=500&auto=format&fit=crop"
+                alt="Oceana Bracelet"
+                fill
+                className="object-cover transition-all duration-500 group-hover:scale-110"
+                sizes="300px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-xl font-serif text-white mb-2">Oceana Bracelet</h3>
+                <p className="text-white/90 text-sm mb-4">Wave-inspired design that flows with natural grace.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-white font-medium">$1,500</span>
+                  <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-white/90 transition-colors">
+                    View Details
+                  </button>
+                </div>
               </div>
             </div>
           </div>
