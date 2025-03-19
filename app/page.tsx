@@ -69,15 +69,16 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative flex items-center h-screen mt-16">
-        <div className="absolute right-0 top-0 w-[70%] h-full md:opacity-100 opacity-30">
+      <section className="relative min-h-screen flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10" />
+        <div className="absolute right-0 top-0 w-full md:w-[70%] h-full md:opacity-100 opacity-30">
           <Image
             src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1200&auto=format&fit=crop"
             alt="Elegant gold jewelry on display"
             fill
-            className="object-cover object-center"
+            className="object-cover object-center md:object-right"
             priority
-            sizes="70vw"
+            sizes="(max-width: 768px) 100vw, 70vw"
           />
         </div>
         <Container className="relative z-10">
