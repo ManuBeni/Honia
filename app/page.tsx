@@ -8,11 +8,11 @@ import { Container } from "@/components/ui/container"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f9f9f7]">
+    <div className="min-h-screen bg-[#f9f9f7] scroll-smooth [scroll-behavior:smooth]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#f9f9f7]/95 transition-all duration-300">
         <Container className="flex items-center justify-between py-5">
-          <Link href="/" className="font-serif text-2xl tracking-widest">
+          <Link href="#hero" className="font-serif text-2xl tracking-widest">
             HONIA
           </Link>
           <div className="hidden md:block">
@@ -26,7 +26,10 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-sm uppercase tracking-wider hover:text-[#c8a97e] transition-colors">
+                <Link 
+                  href="#about" 
+                  className="text-sm uppercase tracking-wider hover:text-[#c8a97e] transition-colors"
+                >
                   About
                 </Link>
               </li>
@@ -69,16 +72,16 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center">
+      <section id="hero" className="relative min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10" />
-        <div className="absolute right-0 top-0 w-full md:w-[70%] h-full md:opacity-100 opacity-30">
+        <div className="absolute right-0 top-0 w-full md:w-[60%] h-full md:opacity-100 opacity-30">
           <Image
             src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1200&auto=format&fit=crop"
             alt="Elegant gold jewelry on display"
             fill
-            className="object-cover object-center md:object-right"
+            className="object-cover object-center"
             priority
-            sizes="(max-width: 768px) 100vw, 70vw"
+            sizes="(max-width: 768px) 100vw, 60vw"
           />
         </div>
         <Container className="relative z-10">
